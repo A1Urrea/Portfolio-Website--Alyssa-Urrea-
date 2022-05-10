@@ -2,3 +2,116 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+<style>
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding 0 15px:
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited
+h1 {text-align: center;}
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  selector {
+    position: relative;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 10px 0;
+}
+  .logo {
+    max-width: 250px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  body {
+      background-color: #2388b0;
+      font-family: 'Cormorant', sans-serif;
+      font-size: 16px; /* Sets the font size to 16px */
+      font-weight: 300; /* Sets the font weight to 300 */
+      line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+      color: #ffc000;
+    }
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  .button {
+    background-color: #ffc000;
+    color: #000000;
+    border: 2px solid #ffc000;
+  }
+  .button:hover {
+  background-color: #ffffff;
+  color: #08447b;
+}
+main {
+  padding-top: 133px;
+}
+
+-webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.75);
+</style>
