@@ -150,6 +150,37 @@ img {
   background-color: #ffffff;
   color: #08447b;
 }
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
 main {
   padding-top: 99px;
 }
@@ -187,6 +218,7 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+  #about-page h3 { margin-top: 0;}
 
   nav {
     width: auto;
@@ -211,10 +243,50 @@ Medium devices (640px and larger)
   float: left;
 }
 
-
-
-
 -webkit-box-shadow: 0px 6px 12px 0px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px 6px 12px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.75);
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
 </style>
