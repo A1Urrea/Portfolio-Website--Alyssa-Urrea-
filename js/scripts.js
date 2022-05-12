@@ -1,3 +1,3 @@
 <script src="js/scripts.js">
-console.log("hellow world")
+console.log("Hi! Welcome to My Portfolio Site")
 </script>
