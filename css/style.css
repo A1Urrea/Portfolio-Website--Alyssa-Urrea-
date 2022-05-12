@@ -4,14 +4,19 @@
 </head>
 
 <style>
-/* Layout styling */
-.container {
-  padding: 0 15px;
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+/* Layout styling */
+.container {
+  padding: 0 0px;
 }
+
+
 
 #hero {
   background-color: #ffe4c4;
@@ -19,6 +24,8 @@
 
 #hero h1 {
   text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
 }
 
 #hero h2 {
@@ -58,37 +65,71 @@ div h2 {
   text-align: center;
 }
 
+
+
 nav > ul {
   list-style-type: none;
   padding: 0;
-  background-color: #ffe4c4;
+  margin: 0;
+  background-color: #white;
 }
-nav > ul > li {
-  display: inline-block;
-  background-color: #ffe4c4;
-}
+
 nav > ul > li > a {
   padding 0 15px:
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
-  background-color: #ffe4c4;
+  background-color: #white;
 }
-nav > ul > li > a:visited
+
+nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: inherit;
+    color: #b852f7;
+}
+
+nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #7e49f6;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #ffe599;
+    transition: 0.2s opacity;
+}
+
+nav > ul > li > a:active {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #ffe599;
+    color: #7e49f6;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #7e49f6;
+    transition: 0.2s opacity;
+}
+
 h1 {text-align: center;}
 header {
-  background-color: #ffe4c4;
-  text-align: center;
+  background-color: #white;
+
   padding: 0;
   margin: 0;
+  min-width: 641px
 }
 
 header h1{
-  text-align: center;
+  text-align: left;
 }
 
 header {
-  background-color: #ffe4c4
+
+  background-color: #ffe4c4;
 }
 
 
@@ -141,6 +182,27 @@ img {
     font-size: 1.35em;
     font-weight: 400;
   }
+
+a {
+    background-color: inherit;
+    color: #7e49f6;
+    text-decoration: none;
+}
+a:visited {
+    background-color: inherit;
+    color: #b852f7;
+}
+
+a:hover {
+    background-color: inherit;
+    color: #1159d5;
+}
+
+a:active {
+    background-color: inherit;
+    color: #b852f7;
+}
+
   .button {
     background-color: #ffc000;
     color: #000000;
@@ -165,19 +227,35 @@ img {
 }
 .button:hover {
   opacity: 0.8;
+  text-decoration: none;
 }
 
-.button {
-  display: inline-block;
-  background-color: #ff7f50;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+.button:active,
+.button:focus {
+    background-color: #ff7f50;
+    color: #000000 !important;
+    border-bottom: 2px solid #994c30;
+    opacity: 0.8;
+    text-decoration: none;
 }
+
+.button.contact {
+    background-color: #fdd537;
+    color: #000000 !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+}
+.button.contact:hover {
+    background-color: #000000;
+    color: #ffffff !important;
+    border-bottom: 2px solid #fdd537;
+}
+.button.contact:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
 
 transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 
@@ -196,14 +274,58 @@ selector {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: unset;
+    padding: 20pm 0 13px;
+  }
+  nav {
+    width:auto;
+    float: unset;
+    margin: 1em 0;
+  }
+  nav > ul {
+    margin: 1em 0;
+    }
+    nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+    nav > ul > li {
+  display: inline-block;
+  
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  font-size: 45px;
+  padding-right: 30px
+}
+
+
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -216,7 +338,8 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 5px 0 5px;
+    min-width: 640px;
   }
   #about-page h3 { margin-top: 0;}
 
@@ -285,6 +408,18 @@ box-shadow:         0px 6px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
 
+main {
+  padding-top: 56px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+nav {
+  background-color: white;
+  padding-top: 50px;
+}
 
 
 
