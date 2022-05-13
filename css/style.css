@@ -127,11 +127,16 @@ header {
 
 header h1{
   text-align: left;
+  margin-left: 10px
 }
 
 header {
 
   background-color: #ffe4c4;
+}
+
+header a{
+  margin-left: 10px;
 }
 
 
@@ -305,9 +310,7 @@ Medium devices (641px and larger)
   display: none;
 }
 
-.navtoggle li:not(:last-child) {
-    display: inline-block;
-}
+
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
