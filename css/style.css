@@ -19,7 +19,7 @@ html {
 
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #2388B0;
 }
 
 #hero h1 {
@@ -38,12 +38,12 @@ html {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #2388B0;
   padding: 20px 0;
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #2388B0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -87,7 +87,7 @@ nav > ul > li > a:visited {
     text-transform: uppercase;
     font-weight: 700;
     background-color: inherit;
-    color: #b852f7;
+    color: #08447b;
     border-bottom: 0px solid #e0ff56;
     padding-bottom: 8px;
 }
@@ -95,12 +95,12 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover {
     padding: 0 15px;
     text-transform: uppercase;
-    background-color: #7e49f6;
+    background-color: #ffc000;
     color: #ffffff;
     font-weight: 700;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #ffe599;
+    border-bottom: 2px solid #08447b;
     transition: 0.2s opacity;
 }
 
@@ -127,12 +127,13 @@ header {
 
 header h1{
   text-align: left;
-  margin-left: 10px
+  margin-left: 10px;
+  color: #08447b;
 }
 
 header {
 
-  background-color: #ffe4c4;
+  background-color: #2388B0;
 }
 
 header a{
@@ -165,7 +166,7 @@ img {
       font-size: 18px; /* Sets the font size to 16px */
       font-weight: 300; /* Sets the font weight to 300 */
       line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-      color: #000000;
+      color: #08447b;
     }
 
   h1, h2, h3, h4 {
@@ -197,7 +198,7 @@ a {
 }
 a:visited {
     background-color: inherit;
-    color: #b852f7;
+    color: #ffffff;
 }
 
 a:hover {
@@ -222,13 +223,13 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #08447b;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #ffc000;
   transition-duration: 0.2s;
   transition-property: opacity;
 }
@@ -239,9 +240,9 @@ a:active {
 
 .button:active,
 .button:focus {
-    background-color: #ff7f50;
+    background-color: #08447b;
     color: #000000 !important;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 2px solid #ffc;
     opacity: 0.8;
     text-decoration: none;
 }
@@ -255,7 +256,7 @@ a:active {
 .button.contact:hover {
     background-color: #000000;
     color: #ffffff !important;
-    border-bottom: 2px solid #fdd537;
+    border-bottom: 2px solid #ffc000;
 }
 .button.contact:active {
     background-color: #000000;
